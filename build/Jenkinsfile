@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // 您的 Harbor 仓库地址
-        REGISTRY = "192.168.43.19:30002"
+        REGISTRY = "192.168.43.216:30002"
     }
     stages {
         stage('docker login') {
