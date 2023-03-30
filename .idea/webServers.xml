@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="dcaaaef2-9da0-4eb0-a91c-f450779fc34e" name="centos216">
+        <fileTransfer rootFolder="/root/workspace" accessType="SFTP" host="192.168.43.216" port="22" sshConfigId="b7215184-4381-487c-beb2-19795cba2e14" sshConfig="root@192.168.43.216:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="432f844a-360d-4d72-af7a-0f04299e439f" name="docker19">
+        <fileTransfer rootFolder="/root/workspace19" accessType="SFTP" host="192.168.43.19" port="22" sshConfigId="a4a317c7-2eb6-4bc7-ac64-92a0c97d2452" sshConfig="root@192.168.43.19:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

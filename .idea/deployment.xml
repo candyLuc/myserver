@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="centos216">
+    <serverData>
+      <paths name="centos216">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/myserver" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="docker19">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/myserver" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

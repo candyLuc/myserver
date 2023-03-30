@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+
+    environment {
+        // 您的 Harbor 仓库地址
+        REGISTRY = "192.168.43.19:30002"
+    }
+    stages {
+        stage('docker login') {
+            steps {
+                echo '=============docker login================'
+                sh """
+                    docker login -u admin -p 123456 http://$REGISTRY
+                """
+            }
+        }
+        stage('docker build') {
+            steps {
+                echo '=============docker build================'
+                sh """
+                   docker build -f build/Dockerfile -t $REGISTRY/shop/myserver:\${version}:\${branch}
+                """
+            }
+        }
+        stage('docker push') {
+            steps {
+                echo '=============docker push================'
+                sh """
+                    docker push $REGISTRY/shop/myserver:\${version}:\${branch}
+                """
+            }
+        }
+
+    }
+
+}
