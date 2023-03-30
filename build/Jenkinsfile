@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo '=============docker login================'
                 sh """
-                    docker login -u admin -p 123456 http://$REGISTRY
+                    docker login -u admin -p Harbor12345 http://$REGISTRY
                 """
             }
         }
