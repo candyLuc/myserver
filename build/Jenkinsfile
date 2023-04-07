@@ -1,4 +1,4 @@
-pipline{
+pipeline{
     agent any
     environment {
         REGISTRY = '192.168.43.159:30002'
