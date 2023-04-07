@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment {
-        REGISTRY = '192.168.43.159:30002'
+        REGISTRY = '192.168.43.216:80'
     }
     stages {
         stage('docker login') {
