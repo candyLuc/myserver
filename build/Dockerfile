@@ -10,9 +10,8 @@ COPY go.mod .
 COPY go.sum .
 RUN go mod download
 COPY . .
-RUN go env
 
-RUN go build -x -ldflags="-s -w" -o cmd/server cmd/server.go
+RUN go build -ldflags="-s -w" -o cmd/server cmd/server.go
 
 CMD ["./server"]
 
