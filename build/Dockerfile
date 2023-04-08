@@ -23,4 +23,6 @@ ENV TZ Asia/Shanghai
 
 COPY --from=builder /build/cmd/server .
 
+EXPOSE 8080
+
 CMD ["./server"]
